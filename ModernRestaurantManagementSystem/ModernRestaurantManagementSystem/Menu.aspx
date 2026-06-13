@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="lblTest" runat="server"></asp:Label>
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+
             <h2>Menu Page</h2>
             <p>This is menu Page</p>
 
