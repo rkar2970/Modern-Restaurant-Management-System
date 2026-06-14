@@ -49,7 +49,7 @@
                 <a href="Menu.aspx">Menu</a>
                 <a href="Search.aspx">Search</a>
                 <a href="Cart.aspx">Cart</a>
-                <a href="Imformation.aspx">Imformation</a>
+                <a href="Information.aspx">Information</a>
             </div>
         </div>
     </form>
