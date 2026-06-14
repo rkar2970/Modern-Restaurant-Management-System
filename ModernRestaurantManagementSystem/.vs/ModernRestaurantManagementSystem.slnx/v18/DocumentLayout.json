@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\modernrestaurantmanagementsystem\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|c:\\users\\rkar2\\onedrive\\desktop\\modern-restaurant-management-system\\modernrestaurantmanagementsystem\\modernrestaurantmanagementsystem\\menu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\menu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|c:\\users\\rkar2\\onedrive\\desktop\\modern-restaurant-management-system\\modernrestaurantmanagementsystem\\modernrestaurantmanagementsystem\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|c:\\users\\rkar2\\onedrive\\desktop\\modern-restaurant-management-system\\modernrestaurantmanagementsystem\\modernrestaurantmanagementsystem\\content folder\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\content folder\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|c:\\users\\rkar2\\onedrive\\desktop\\modern-restaurant-management-system\\modernrestaurantmanagementsystem\\modernrestaurantmanagementsystem\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\modernrestaurantmanagementsystem\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|c:\\users\\rkar2\\onedrive\\desktop\\modern-restaurant-management-system\\modernrestaurantmanagementsystem\\modernrestaurantmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\modernrestaurantmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{1E8843B8-C0CE-41BF-B5B6-3DAC920F404E}|ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem.csproj|solutionrelative:modernrestaurantmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Content Folder\\site.css",
+              "RelativeDocumentMoniker": "ModernRestaurantManagementSystem\\Content Folder\\site.css",
+              "ToolTip": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Content Folder\\site.css",
+              "RelativeToolTip": "ModernRestaurantManagementSystem\\Content Folder\\site.css",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-14T04:30:28.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Menu.aspx",
               "DocumentMoniker": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Menu.aspx",
               "RelativeDocumentMoniker": "ModernRestaurantManagementSystem\\Menu.aspx",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "ModernRestaurantManagementSystem\\DatabaseHelper.cs",
@@ -56,26 +73,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Web.config",
               "RelativeDocumentMoniker": "ModernRestaurantManagementSystem\\Web.config",
               "ToolTip": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Web.config",
               "RelativeToolTip": "ModernRestaurantManagementSystem\\Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-06-13T18:07:41.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Menu.aspx.cs",
               "DocumentMoniker": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Menu.aspx.cs",
               "RelativeDocumentMoniker": "ModernRestaurantManagementSystem\\Menu.aspx.cs",
               "ToolTip": "C:\\Users\\rkar2\\OneDrive\\Desktop\\Modern-Restaurant-Management-System\\ModernRestaurantManagementSystem\\ModernRestaurantManagementSystem\\Menu.aspx.cs",
               "RelativeToolTip": "ModernRestaurantManagementSystem\\Menu.aspx.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAD0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwBMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-13T04:38:06.243Z",
               "EditorCaption": ""
