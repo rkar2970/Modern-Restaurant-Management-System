@@ -35,7 +35,7 @@
     <asp:Button ID="btnClearFilter" runat="server" Text="Clear Filter" OnClick="btnClearFilter_Click" />
 </asp:Panel>
 
-        <asp:Repeater ID="rptSearchResults" runat="server">
+        <asp:Repeater ID="rptSearchResults" runat="server" OnItemCommand ="rptSearchResults_ItemCommand">
     <ItemTemplate>
         <div class="food-card">
             <img src='<%# Eval("ImagePath") %>' class="food-img" />
@@ -48,10 +48,12 @@
                 ID="btnAddToCart" 
                 runat="server" 
                 Text="Add to Cart"
+                CommandName="AddToCart"
                 CommandArgument='<%# Eval("MenuItemId") %>' />
         </div>
     </ItemTemplate>
 </asp:Repeater>
+
 <asp:Label ID="lblMessage" runat="server"></asp:Label>
             
             <div class="buttom-nav">

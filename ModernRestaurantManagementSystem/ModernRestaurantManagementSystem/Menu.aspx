@@ -11,8 +11,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-           
-           
+       
+         
 
             <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
             <a href="Menu.aspx">All</a>
@@ -24,7 +24,8 @@
                 </ItemTemplate>
             </asp:Repeater>
 
-    <asp:Repeater ID="rptMenuItems" runat="server">
+    <asp:Repeater ID="rptMenuItems" runat="server"
+    OnItemCommand ="rptMenuItems_ItemCommand">
     <ItemTemplate>
         <div class="food-card">
             <img src='<%# Eval("ImagePath") %>' class="food-img" />
@@ -37,14 +38,15 @@
                 ID="btnAddToCart" 
                 runat="server" 
                 Text="Add to Cart"
+                CommandName="AddToCart"
                 CommandArgument='<%# Eval("MenuItemId") %>' />
         </div>
     </ItemTemplate>
 </asp:Repeater>
-
+                
             <h2>Menu Page</h2>
             <p>This is menu Page</p>
-
+            <asp:Label ID="lblMessage" runat="server"></asp:Label>
             <div class="buttom-nav">
                 <a href="Menu.aspx">Menu</a>
                 <a href="Search.aspx">Search</a>

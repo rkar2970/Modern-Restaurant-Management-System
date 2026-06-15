@@ -9,8 +9,20 @@
 <body>
     <form id="form1" runat="server">
         <div>  
-            <h2>Cart Page</h2>
-            <p>This is Cart Page</p>
+           <h2>Your Cart</h2>
+
+<asp:Repeater ID="rptCartItems" runat="server">
+    <ItemTemplate>
+        <div class="cart-item">
+            <h3><%# Eval("Name") %></h3>
+            <p>Quantity: <%# Eval("Quantity") %></p>
+            <p>Price: <%# Eval("Price") %> Ks</p>
+            <p>Subtotal: <%# Eval("Subtotal") %> Ks</p>
+        </div>
+    </ItemTemplate>
+</asp:Repeater>
+
+<asp:Label ID="lblTotal" runat="server"></asp:Label>
 
              <div class="buttom-nav">
                 <a href="Menu.aspx">Menu</a>
