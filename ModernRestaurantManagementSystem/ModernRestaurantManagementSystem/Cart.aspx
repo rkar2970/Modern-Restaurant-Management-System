@@ -11,25 +11,67 @@
         <div>  
            <h2>Your Cart</h2>
 
-<asp:Repeater ID="rptCartItems" runat="server">
+<asp:Label ID="lblTableNumber" runat="server"></asp:Label>
+<br />
+<asp:Label ID="lblMessage" runat="server"></asp:Label>
+
+<asp:Repeater ID="rptCartItems" runat="server" OnItemCommand="rptCartItems_ItemCommand">
     <ItemTemplate>
         <div class="cart-item">
             <h3><%# Eval("Name") %></h3>
-            <p>Quantity: <%# Eval("Quantity") %></p>
+
             <p>Price: <%# Eval("Price") %> Ks</p>
+
+            <p>
+                Quantity:
+                <asp:Button 
+                    ID="btnDecrease" 
+                    runat="server" 
+                    Text="-"
+                    CommandName="Decrease"
+                    CommandArgument='<%# Eval("CartItemId") %>' />
+
+                <%# Eval("Quantity") %>
+
+                <asp:Button 
+                    ID="btnIncrease" 
+                    runat="server" 
+                    Text="+"
+                    CommandName="Increase"
+                    CommandArgument='<%# Eval("CartItemId") %>' />
+            </p>
+
             <p>Subtotal: <%# Eval("Subtotal") %> Ks</p>
+
+            <asp:Button 
+                ID="btnRemove" 
+                runat="server" 
+                Text="Remove"
+                CommandName="Remove"
+                CommandArgument='<%# Eval("CartItemId") %>' />
         </div>
     </ItemTemplate>
 </asp:Repeater>
 
-<asp:Label ID="lblTotal" runat="server"></asp:Label>
+<hr />
 
-             <div class="buttom-nav">
+<asp:Label ID="lblTotal" runat="server"></asp:Label>
+<br /><br />
+
+<asp:Button 
+    ID="btnOrder" 
+    runat="server" 
+    Text="Order"
+    OnClick="btnOrder_Click" />
+               
+            <div class="bottom-nav">
                 <a href="Menu.aspx">Menu</a>
                 <a href="Search.aspx">Search</a>
                 <a href="Cart.aspx">Cart</a>
-                <a href="Imformation.aspx">Imformation</a>
-             </div>
+                <a href="Information.aspx">Info</a>
+
+            </div>
+            
         </div>
     </form>
 </body>
