@@ -9,8 +9,38 @@
 <body>
     <form id="form1" runat="server">
         <div>
-              <h2>Payment Page</h2>
-              <p>This is Payment Page</p>
+              <h2>Payment</h2>
+            <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="lblMessage" runat="server"></asp:Label>
+            <h3>Order Summary</h3>
+            <asp:Repeater ID="rptPaymentItems" runat="server">
+                <ItemTemplate>
+                    <div>
+                        <h4><%#Eval("Name")%></h4>
+                        <p>Quantity:<%#Eval("Quantity")%></p>
+                        <p>Price:<%#Eval("Price")%>Ks</p>
+                        <p>Subtotal:<%#Eval("Subtotal")%>Ks</p>
+
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+            <hr />
+            <asp:Label ID="lblTotal" runat="server"></asp:Label>
+            <h3>Payment Method</h3>
+
+            <asp:RadioButtonList ID="rblPaymentMethod" runat="server">
+
+                <asp:ListItem Text="Cash" Value="Cash" ></asp:ListItem>
+                <asp:ListItem Text="KBZPay" Value="KBZPay" ></asp:ListItem>
+                <asp:ListItem Text="WavePay" Value="WavePay" ></asp:ListItem>
+
+
+            </asp:RadioButtonList>
+            <br />
+
+            <asp:Button ID="btnPayNow" runat="server" Text="Pay Now" OnClick="btnPayNow_Click" />
+              
         </div>
     </form>
 </body>
