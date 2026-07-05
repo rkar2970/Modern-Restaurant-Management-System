@@ -5,11 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="ContentFolder/site.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-              <h2>Payment</h2>
+        <div class="page-container">
+              <h2 class="page-title">Payment</h2>
             <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
             <br />
             <asp:Label ID="lblMessage" runat="server"></asp:Label>
@@ -39,7 +41,7 @@
             </asp:RadioButtonList>
             <br />
 
-            <asp:Button ID="btnPayNow" runat="server" Text="Pay Now" OnClick="btnPayNow_Click" />
+            <asp:Button  class="btn-main" ID="btnPayNow" runat="server" Text="Pay Now" OnClick="btnPayNow_Click" />
               
         </div>
     </form>

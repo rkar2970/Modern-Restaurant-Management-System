@@ -177,7 +177,7 @@ namespace ModernRestaurantManagementSystem
             using (SqlConnection conn = DatabaseHelper.GetConnection())
             {
                 string query = @"
-            SELECT MenuItemId, Name, Price, ImagePath
+            SELECT MenuItemId, Name, Description, Price, ImagePath
             FROM MenuItem
             WHERE IsAvailable = 1";
 
@@ -223,7 +223,7 @@ namespace ModernRestaurantManagementSystem
             using (SqlConnection conn = DatabaseHelper.GetConnection())
             {
                 string query = @"
-            SELECT MenuItemId, Name, Price, ImagePath
+            SELECT MenuItemId, Name, Description, Price, ImagePath
             FROM MenuItem
             WHERE IsAvailable = 1";
 

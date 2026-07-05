@@ -5,50 +5,64 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="Content Folder/site.css" rel="stylesheet" />
-
+    <link href="ContentFolder/site.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-       
-         
+        <div class="page-container">
+       <div class="menu-header">
+           <div>
+               <h2 class="restaurant-name"> Le Château Table</h2>
+               <p class="page-subtitle">What would you like to order</p>
+           </div>
+           <div class="table-badge">
+                 <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
+           </div>
+       </div>
+            <asp:Label ID="lblMessage" runat="server" class="message-text"></asp:Label>
 
-            <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
-            <a href="Menu.aspx">All</a>
+           <div class="category-section">
+            <a href="Menu.aspx" class="category-pill">All</a>
             <asp:Repeater ID="rptCategories" runat="server">
                 <ItemTemplate>
-                    <a href='Menu.aspx?categoryId=<%# Eval("CategoryId") %>'>
+                    <a class="category-pill" href='Menu.aspx?categoryId=<%# Eval("CategoryId") %>'>
                      <%# Eval("CategoryName") %>
                     </a>
                 </ItemTemplate>
             </asp:Repeater>
+           </div>
+
 
     <asp:Repeater ID="rptMenuItems" runat="server"
     OnItemCommand ="rptMenuItems_ItemCommand">
     <ItemTemplate>
         <div class="food-card">
-            <img src='<%# Eval("ImagePath") %>' class="food-img" />
+            <img  class="food-img" src='<%# Eval("ImagePath") %>'  />
 
-            <h3><%# Eval("Name") %></h3>
+            <div class="food-info">
 
-            <p><%# Eval("Price") %> Ks</p>
+            <div class="food-name"><%# Eval("Name") %></div>
+            <div class="food-description"><%# Eval("Description") %></div>
+
+            <div class="food-bottom">
+          <div class="food-price"> <%# Eval("Price") %> Ks</div>
 
             <asp:Button 
+                class="btn-main"
                 ID="btnAddToCart" 
                 runat="server" 
-                Text="Add to Cart"
+                Text="Add"
                 CommandName="AddToCart"
                 CommandArgument='<%# Eval("MenuItemId") %>' />
+        </div>
+            </div>
         </div>
     </ItemTemplate>
 </asp:Repeater>
                 
-            <h2>Menu Page</h2>
-            <p>This is menu Page</p>
-            <asp:Label ID="lblMessage" runat="server"></asp:Label>
-            <div class="buttom-nav">
-                <a href="Menu.aspx">Menu</a>
+            
+            <div class="bottom-nav"> 
+                <a href="Menu.aspx" class="active">Menu</a>
                 <a href="Search.aspx">Search</a>
                 <a href="Cart.aspx">Cart</a>
                 <a href="Information.aspx">Information</a>

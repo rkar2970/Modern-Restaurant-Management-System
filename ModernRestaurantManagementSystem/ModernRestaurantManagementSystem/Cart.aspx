@@ -5,11 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="ContentFolder/site.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>  
-           <h2>Your Cart</h2>
+        <div class="page-container">  
+           <h2 class="page-title">Your Cart</h2>
 
 <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
 <br />
@@ -25,6 +27,7 @@
             <p>
                 Quantity:
                 <asp:Button 
+                    class="btn-main"
                     ID="btnDecrease" 
                     runat="server" 
                     Text="-"
@@ -34,6 +37,7 @@
                 <%# Eval("Quantity") %>
 
                 <asp:Button 
+                    class ="btn-main"
                     ID="btnIncrease" 
                     runat="server" 
                     Text="+"
@@ -44,6 +48,7 @@
             <p>Subtotal: <%# Eval("Subtotal") %> Ks</p>
 
             <asp:Button 
+                class="btn-main"
                 ID="btnRemove" 
                 runat="server" 
                 Text="Remove"
@@ -59,17 +64,19 @@
 <br /><br />
 
 <asp:Button 
+     class="btn-main"
     ID="btnOrder" 
     runat="server" 
     Text="Order"
     OnClick="btnOrder_Click" />
-               
-            <div class="bottom-nav">
-                <a href="Menu.aspx">Menu</a>
-                <a href="Search.aspx">Search</a>
-                <a href="Cart.aspx">Cart</a>
-                <a href="Information.aspx">Info</a>
+            
 
+             
+            <div class="bottom-nav"> 
+                <a href="Menu.aspx" >Menu</a>
+                <a href="Search.aspx">Search</a>
+                <a href="Cart.aspx" class="active" >Cart</a>
+                <a href="Information.aspx">Information</a>
             </div>
             
         </div>

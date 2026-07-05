@@ -102,7 +102,7 @@
     <Content Include="About.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content Folder\site.css" />
+    <Content Include="ContentFolder\site.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -285,7 +285,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Content Folder\Image\Menu\" />
+    <Folder Include="ContentFolder\Image\Menu\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
