@@ -171,7 +171,7 @@ namespace ModernRestaurantManagementSystem
                     totalcmd.Parameters.AddWithValue("@SessionId", sessionId);
                     decimal total = Convert.ToDecimal(totalcmd.ExecuteScalar());
 
-                    lblTotal.Text = "Total Amount: " + total.ToString("N0") + "Ks";
+                    lblTotal.Text =  total.ToString("N0") + "Ks";
                     if(total == 0)
                     {
                         lblMessage.Text = "Your cart is empty.";

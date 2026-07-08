@@ -183,7 +183,7 @@ namespace ModernRestaurantManagementSystem
 
                     decimal total = Convert.ToDecimal(totalCmd.ExecuteScalar());
 
-                    lblTotal.Text = "Total: " + total.ToString("N0") + " Ks";
+                    lblTotal.Text = total.ToString("N0") + " Ks";
 
                     if (total == 0)
                     {

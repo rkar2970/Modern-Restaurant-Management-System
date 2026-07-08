@@ -5,66 +5,91 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="ContentFolder/site.css" rel="stylesheet" />
+        <link href="ContentFolder/StyleSheet.css" rel="stylesheet" />
+
 
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="page-container">  
-           <h2 class="page-title">Your Cart</h2>
+       <div class="page-container">
 
-<asp:Label ID="lblTableNumber" runat="server"></asp:Label>
-<br />
-<asp:Label ID="lblMessage" runat="server"></asp:Label>
+    <div class="cart-header">
+        <div>
+            <h2 class="page-title">Your Cart</h2>
+            <p class="page-subtitle">Review your selected items.</p>
+        </div>
+
+        <div class="table-badge">
+            <asp:Label ID="lblTableNumber" runat="server"></asp:Label>
+        </div>
+    </div>
+
+    <asp:Label ID="lblMessage" runat="server" CssClass="message-text"></asp:Label>
 
 <asp:Repeater ID="rptCartItems" runat="server" OnItemCommand="rptCartItems_ItemCommand">
     <ItemTemplate>
-        <div class="cart-item">
-            <h3><%# Eval("Name") %></h3>
+        <div class="cart-card">
 
-            <p>Price: <%# Eval("Price") %> Ks</p>
-
-            <p>
-                Quantity:
-                <asp:Button 
-                    class="btn-main"
-                    ID="btnDecrease" 
-                    runat="server" 
-                    Text="-"
-                    CommandName="Decrease"
-                    CommandArgument='<%# Eval("CartItemId") %>' />
-
-                <%# Eval("Quantity") %>
+            <div class="cart-item-top">
+                <div>
+                    <h3 class="cart-food-name"><%# Eval("Name") %></h3>
+                    <p class="cart-price">Price: <%# Eval("Price") %> Ks</p>
+                </div>
 
                 <asp:Button 
-                    class ="btn-main"
-                    ID="btnIncrease" 
+                    ID="btnRemove" 
                     runat="server" 
-                    Text="+"
-                    CommandName="Increase"
+                    Text="Remove"
+                    CssClass="btn-danger btn-small"
+                    CommandName="Remove"
                     CommandArgument='<%# Eval("CartItemId") %>' />
-            </p>
+            </div>
 
-            <p>Subtotal: <%# Eval("Subtotal") %> Ks</p>
+            <div class="quantity-row">
+                <span>Quantity</span>
 
-            <asp:Button 
-                class="btn-main"
-                ID="btnRemove" 
-                runat="server" 
-                Text="Remove"
-                CommandName="Remove"
-                CommandArgument='<%# Eval("CartItemId") %>' />
+                <div class="quantity-control">
+                    <asp:Button 
+                        ID="btnDecrease" 
+                        runat="server" 
+                        Text="-"
+                        CssClass="qty-btn"
+                        CommandName="Decrease"
+                        CommandArgument='<%# Eval("CartItemId") %>' />
+
+                    <span class="quantity-number"><%# Eval("Quantity") %></span>
+
+                    <asp:Button 
+                        ID="btnIncrease" 
+                        runat="server" 
+                        Text="+"
+                        CssClass="qty-btn"
+                        CommandName="Increase"
+                        CommandArgument='<%# Eval("CartItemId") %>' />
+                </div>
+            </div>
+
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <strong><%# Eval("Subtotal") %> Ks</strong>
+            </div>
+
         </div>
     </ItemTemplate>
 </asp:Repeater>
 
 <hr />
 
-<asp:Label ID="lblTotal" runat="server"></asp:Label>
-<br /><br />
+
+<div class="cart-summary">
+    <span>Total Amount</span>
+    <strong>
+        <asp:Label ID="lblTotal" runat="server"></asp:Label>
+    </strong>
+</div>
 
 <asp:Button 
-     class="btn-main"
+     class="btn-main btn-full"
     ID="btnOrder" 
     runat="server" 
     Text="Order"

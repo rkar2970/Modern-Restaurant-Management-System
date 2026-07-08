@@ -55,7 +55,7 @@ namespace ModernRestaurantManagementSystem
                         lblPaymentMethod.Text = reader["PaymentMethod"].ToString();
 
                         decimal totalAmount = Convert.ToDecimal(reader["TotalAmount"]);
-                        lblTotalAmount.Text = "Total Amount: " + totalAmount.ToString("N0") + " Ks";
+                        lblTotalAmount.Text = totalAmount.ToString("N0") + " Ks";
                     }
                     else
                     {

@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="ContentFolder/site.css" rel="stylesheet" />
+    <link href="ContentFolder/StyleSheet.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -17,6 +18,7 @@
 
 
             </div>
+            <br />
             <asp:Label ID="lblMessage" runat="server" class="message-text"></asp:Label>
 
 
@@ -86,7 +88,7 @@
 
                 <div class="food-bottom">
                     <span class="food-price"><%# Eval("Price") %> Ks</span>
-
+                        
                     <asp:Button 
                         ID="btnAddToCart" 
                         runat="server" 
@@ -97,6 +99,7 @@
                 </div>
             </div>
         </div>
+
     </ItemTemplate>
 </asp:Repeater>
 
