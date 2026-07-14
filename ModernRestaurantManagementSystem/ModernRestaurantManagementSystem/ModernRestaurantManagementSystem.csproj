@@ -286,7 +286,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="ContentFolder\Image\Menu\" />
+    <Folder Include="ContentFolder\Image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
